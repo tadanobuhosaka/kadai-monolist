@@ -9,7 +9,7 @@ class ItemsController < ApplicationController
       results = RakutenWebService::Ichiba::Item.search({
         keyword: @keyword,
         imageFlag: 1,
-        hits: 40,
+        hits: 20,
       })
 
       results.each do |result|
